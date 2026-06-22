@@ -23,7 +23,9 @@ namespace EmployeeApI_Dataverse.Controllers
         [HttpPost(Name = "CreateDepartment")]
         public async Task<Guid> CreateDepartment(CreateDept dto)
         {
+
             var serviceClient = _dataverseService.GetClient();
+            var serviceClient11 = _dataverseService.GetClient();
 
             Entity dept = new Entity("cr9a7_department1");
 
