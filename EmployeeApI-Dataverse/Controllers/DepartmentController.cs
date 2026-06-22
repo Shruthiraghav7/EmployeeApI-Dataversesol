@@ -25,7 +25,8 @@ namespace EmployeeApI_Dataverse.Controllers
         {
 
             var serviceClient = _dataverseService.GetClient();
-            //checking push flow
+            var serviceClient11 = _dataverseService.GetClient();
+
             Entity dept = new Entity("cr9a7_department1");
 
             var Query = new QueryExpression("cr9a7_department1")
