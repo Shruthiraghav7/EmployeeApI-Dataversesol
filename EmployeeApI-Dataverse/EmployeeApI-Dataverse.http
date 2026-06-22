@@ -1,0 +1,6 @@
+@EmployeeApI_Dataverse_HostAddress = http://localhost:5033
+
+GET {{EmployeeApI_Dataverse_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
