@@ -31,18 +31,7 @@ namespace EmployeeApI_Dataverse.Controllers
 
             employee["cr9a7_email"] = dto.Email;
 
-            //  Guid employeeId = Guid.NewGuid();
-
-            //  employee["cr9a7_id"] = employeeId;
-
             employee["cr9a7_dept_id"] = 1;
-
-            // new EntityReference("cr9a7_department1", 1);
-
-            // Department Lookup
-
-           // employee["cr9a7_dept_id"] =
-    //new EntityReference("cr9a7_department1", departmentGuid);
 
             Guid employeeId = serviceClient.Create(employee);
 
